@@ -1,0 +1,15 @@
+{
+  "name": "farmbuddy",
+  "private": true,
+  "description": "FarmBuddy — Next.js Frontend + Python Django REST API Backend",
+  "scripts": {
+    "dev": "npm --prefix frontend run dev",
+    "dev:frontend": "npm --prefix frontend run dev",
+    "dev:backend": "python backend/manage.py runserver 8000",
+    "build:frontend": "npm --prefix frontend run build",
+    "typecheck:frontend": "npm --prefix frontend run typecheck",
+    "migrate": "python backend/manage.py migrate",
+    "seed": "python backend/manage.py seed_data",
+    "test:backend": "python backend/test_api.py"
+  }
+}
